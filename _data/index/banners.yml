@@ -1,0 +1,9 @@
+# carousel banners section
+# Add items for each banner image in the carousel
+#
+# Images are expected to be located in `static/assets/img/`.
+- src: games/mirage/mirage-1.png
+  title: Mirage gameplay 
+
+- src: games/mirage/mirage-2.png
+  title: Mirage gameplay

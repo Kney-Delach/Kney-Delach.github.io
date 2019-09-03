@@ -1,0 +1,46 @@
+# careers section data
+# if you don't have language feature(language.yml is empty), ignore "i18n" items
+#- name:
+#    detail: Company A
+#    i18n: company_a
+#  desc:
+#    detail: I worked at Company A ...
+#    i18n: company_a_desc
+#  date:
+#    detail: Apr. 2016
+#    i18n: company_a_date
+#  job:
+#    detail: CTO
+#    i18n: company_a_job
+#  icon: fa-plus-square
+
+- name:
+    detail: University Of Southampton (BSc Computer Science)
+    i18n: uos
+  desc:
+    detail: During September of 2019 I graduated from the University of Southampton.
+    i18n: uos_desc
+  date:
+    detail: September 2019
+    i18n: uos_date
+  job:
+    detail: Undergraduate Student
+    i18n: uos_title
+  icon: fa-book
+  present: true
+
+- name:
+    detail: Bedales School (A Levels)
+    i18n: bedales
+  desc:
+    detail: During my final high school years I studied Mathematics, Further Mathematics, Physics, and Computing.
+    i18n: bedales_desc
+  date:
+    detail: June 2014
+    i18n: uos_date
+  job:
+    detail: Student
+    i18n: bedales_title
+  icon: fa-book
+
+  #icon: fa-gamepad

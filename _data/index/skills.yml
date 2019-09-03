@@ -1,0 +1,6 @@
+# skills section data
+
+label: Ability
+id : cs
+aspects: Deep Learning, Machine Learning, Visual Studio, Metal, OpenGL, GLSL, C++, Python, Unity, Unreal Engine
+percentage: 20, 60, 90, 20, 80, 75, 75, 70, 90, 55

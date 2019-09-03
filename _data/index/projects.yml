@@ -1,0 +1,16 @@
+# projects section data
+# If you don't have language feature(language.yml is empty), ignore "i18n" items
+# Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Mirage
+  i18n: mirage
+  gh_user: Kney-Delach
+  repo: Mirage
+  img: /static/assets/img/games/Mirage-Icon.png
+  desc: Mirage is a 2D puzzle platformer prototype I designed and developed for COMP3218 at the University of Southampton during a period of 2 weeks, it scored 91%. The objective of this project was to demonstrate a core dynamic through the tutorialisation of the game in an organic manner.
+
+
+- #name: Google
+  #i18n: google
+  #url: https://google.com
+  #img: /static/assets/img/landing/google.png
+  #desc: This is another project.
