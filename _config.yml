@@ -2,20 +2,20 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: Portfolio
+title: Ori Lazar
 description: Ori's blog,using Jekyll and github pages.
 keywords: Ori,Lazar,blog,Jekyll,github,gh-pages
 baseurl:  #/homepage # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 url: https://kney-delach.github.io/  # url should be 'http://<github_username>.github.io/homepage' as before
 # url: http://127.0.0.1:4000
-img_path: kney-delach.github.io/static/assets/img/games/Mirage-1.png  # url should be '/homepage/static/assets/img/blog' as before
+img_path: #kney-delach.github.io/static/assets/img/landing/angkor.jpg  # url should be '/homepage/static/assets/img/blog' as before
 
 # author -- index page "about me" section
 author:  # change following line to your infomation.
-  name: Ori  # Be used at blog posts' author.
-  first_name: Ori  # Be used at index page about me section.
-  last_name: Lazar  # Be used at index page about me section.
-  avatar: /static/assets/img/landing/profile.png  # upload your avatar at directory and edit it.
+  name: Ori # Be used at blog posts' author.
+  first_name: "Ori Lazar" # Be used at index page about me section.
+  last_name: #Lazar  # Be used at index page about me section.
+  avatar: /static/assets/img/landing/camb-monkey.jpg  # upload your avatar at directory and edit it.
   github_username: Kney-Delach  # Leave blank if you don't have now
   linkedin_id: #jarrekk # Leave blank if you don't have now
   facebook_username: #jiakunnj  # Leave blank if you don't have now
@@ -53,8 +53,8 @@ gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your 
 donation: off  # type 'on'/'off' to choice display donation button at post page or not
 
 ## carousels
-index_carousel: on  # index page carousel switch
-blog_carousel: on  # blog page carousel switch
+index_carousel: off #son  # index page carousel switch
+blog_carousel: off  # blog page carousel switch
 
 # scss
 sass:
