@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: Deep Learning, Machine Learning, Visual Studio, Metal, OpenGL, GLSL, C++, Python, Unity, Unreal Engine
-percentage: 20, 60, 90, 20, 80, 75, 75, 70, 90, 55
+aspects: Machine Learning, Visual Studio, Metal, OpenGL, GLSL, C++, Python, Haskell, Unity, Unreal Engine
+percentage: 65, 90, 25, 70, 70, 75, 70, 40, 85, 55

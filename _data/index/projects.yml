@@ -5,12 +5,12 @@
   i18n: mirage
   gh_user: Kney-Delach
   repo: Mirage
-  img: /static/assets/img/games/Mirage-Icon.png
-  desc: Mirage is a 2D puzzle platformer prototype I designed and developed for COMP3218 at the University of Southampton during a period of 2 weeks, it scored 91%. The objective of this project was to demonstrate a core dynamic through the tutorialisation of the game in an organic manner.
+  img: /static/assets/img/games/Mirage-Logo.png
+  desc: Mirage is a 2D puzzle platformer prototype.. The objective of this project was to demonstrate a core dynamic through the tutorialisation of the game in an organic manner.
 
 
-- #name: Google
-  #i18n: google
-  #url: https://google.com
-  #img: /static/assets/img/landing/google.png
-  #desc: This is another project.
+- name: MapexQL
+  i18n: mapex
+  url: /static/assets/projects/MQL/MQL-Manual.pdf #https://kney-delach.github.io/MQL-Manual.pdf
+  img: /static/assets/projects/MQL/MQL-Logo-Short.png
+  desc: Mapex is a programming language which was created with the goal of being able to write a program with it to solve any particular conjunctive query. It was written using the Haskell programming language.
