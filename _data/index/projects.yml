@@ -14,3 +14,9 @@
   url: /static/assets/projects/MQL/MQL-Manual.pdf #https://kney-delach.github.io/MQL-Manual.pdf
   img: /static/assets/projects/MQL/MQL-Logo-Short.png
   desc: Mapex is a programming language which was created with the goal of being able to write a program with it to solve any particular conjunctive query. It was written using the Haskell programming language.
+
+- name: Digital Doilies
+  i18n: dollies
+  url: /static/assets/projects/Digital-Doilies/Digital-Doilies.jar #https://kney-delach.github.io/MQL-Manual.pdf
+  img: /static/assets/projects/Digital-Doilies/Doilie-Icon.jpg
+  desc: This is the first Java applet I ever built, it was created with the purpose of being able to draw Digital Doilies. (The icon for this project was made in this program)
