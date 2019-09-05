@@ -1,21 +1,27 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Mirage
-  i18n: mirage
+
   #gh_user: Kney-Delach
   #repo: Mirage
+
+- name: Mirage
+  i18n: mirage
   url:  /static/assets/projects/Mirage/Mirage-Windows.zip
   img: /static/assets/projects/Mirage/m-logo.png
   desc: Mirage is a 2D puzzle platformer game [prototype]. The objective of this project was to demonstrate a core dynamic through the tutorialisation of the game in an organic manner.
 
 - name: Musical Pipes
   i18n: mp
-  #gh_user: Kney-Delach
-  #repo: Mirage
   url:  /static/assets/projects/Musical-Pipes/MP-Build.zip
   img: /static/assets/projects/Musical-Pipes/MP-Logo.png
   desc: Musical Pipes is an endless pipe runner game [prototype]. The level generation occurs in a procedural manner based on the signal analysis of the songs being played.
+
+- name: Ring of Power
+  i18n: rop
+  url: /static/assets/projects/Ring-Of-Power/ROP-Build.zip
+  img: /static/assets/projects/Ring-Of-Power/ROP-Logo.png
+  desc: Ring of Power is a narrative based storytelling game [prototype]. The narrative of this game is based on the story "The Seven Ravens". The game provides a diverse set of paths and results to the storyline.
 
 - name: MapexQL
   i18n: mapex
