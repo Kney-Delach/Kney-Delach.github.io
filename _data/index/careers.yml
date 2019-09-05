@@ -27,7 +27,7 @@
     detail: Undergraduate Student
     i18n: uos_title
   icon: fa-book
-  present: true
+  #present: true
 
 - name:
     detail: Bedales School (A Levels)
