@@ -15,13 +15,13 @@
 #  icon: fa-plus-square
 
 - name:
-    detail: University Of Southampton (BSc Computer Science)
+    detail: University Of Southampton (Undergraduate Student)
     i18n: uos
   desc:
-    detail: I graduated from the University of Southampton in September of 2019.
+    detail: I graduated from the University of Southampton on the 13th of September 2019, with a First Class Honours.
     i18n: uos_desc
   date:
-    detail: September 2019
+    detail: 13 September 2019
     i18n: uos_date
   job:
     detail: Undergraduate Student
