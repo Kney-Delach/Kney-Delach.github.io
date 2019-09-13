@@ -15,7 +15,7 @@
 #  icon: fa-plus-square
 
 - name:
-    detail: University Of Southampton (Undergraduate Student)
+    detail: University Of Southampton (First Class Honours)
     i18n: uos
   desc:
     detail: I graduated from the University of Southampton on the 13th of September 2019, with a First Class Honours.
@@ -30,16 +30,16 @@
   #present: true
 
 - name:
-    detail: Bedales School (A Levels)
+    detail: Bedales School
     i18n: bedales
   desc:
-    detail: During my final high school years I studied Mathematics, Further Mathematics, Physics, and Computing.
+    detail: During my final high school years I studied Mathematics, Further Mathematics, Computing, and Physics.
     i18n: bedales_desc
   date:
     detail: June 2014
     i18n: uos_date
   job:
-    detail: Student
+    detail: A-Levels Student
     i18n: bedales_title
   icon: fa-book
 
