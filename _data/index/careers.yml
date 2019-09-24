@@ -15,7 +15,22 @@
 #  icon: fa-plus-square
 
 - name:
-    detail: University Of Southampton (First Class Honours)
+    detail: Newcastle University (MSc Computer Games Engineering)
+    i18n: nu
+  desc:
+    detail: I am currently undertaking a masters in order to become an effecitve game engine / tools engineer. 
+    i18n: nu_desc
+  date:
+    detail: 23 September 2019
+    i18n: nu_date
+  job:
+    detail: Postgraduate Student
+    i18n: nu_title
+  icon: fa-book
+  present: true
+
+- name:
+    detail: University Of Southampton (BSc Computer Science)
     i18n: uos
   desc:
     detail: I graduated from the University of Southampton on the 13th of September 2019, with a First Class Honours.
