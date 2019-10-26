@@ -1,1 +1,1 @@
-# My portfolio website :) 
+This repository contains the source code for my portfolio website.
