@@ -7,7 +7,7 @@
 
 - name: Mirage
   i18n: mirage
-  url:  /static/assets/projects/Mirage/GLPlayer/index.html
+  url: /static/assets/projects/Mirage/GLPlayer/index.html
   img: /static/assets/projects/Mirage/m-logo.png
   desc: Mirage is a 2D puzzle platformer game. The objective of this project was to demonstrate a core dynamic through the tutorialisation of the game in an organic manner.
 
