@@ -1,36 +1,47 @@
+#https://help.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
 
-  #gh_user: Kney-Delach
-  #repo: Mirage
-
-- name: Mirage
+- name: 🎮 | Mirage
   i18n: mirage
-  url: /static/assets/projects/Mirage/GLPlayer/index.html
+  gh_user: Kney-Delach
+  repo: Mirage
   img: /static/assets/projects/Mirage/m-logo.png
-  desc: Mirage is a 2D puzzle platformer game. The objective of this project was to demonstrate a core dynamic through the tutorialisation of the game in an organic manner.
+  desc: A 2D platformer demonstrating the spatial reasoning core dynamic through fluid tutorialisation
 
-- name: Musical Pipes
+- name: 🎮 | Musical Pipes
   i18n: mp
-  url:  /static/assets/projects/Musical-Pipes/MP-Build.zip
+  gh_user: Kney-Delach
+  repo: Musical-Pipes
+  #url:  /static/assets/projects/Musical-Pipes/MP-Build.zip
   img: /static/assets/projects/Musical-Pipes/MP-Logo.png
-  desc: Musical Pipes is an endless pipe runner game [prototype]. The level generation occurs in a procedural manner based on the signal analysis of the songs being played.
+  desc: A procedurally generated survival game using real-time signal analysis
 
-- name: Ring of Power
+- name: 🎮 | Splash
+  i18n: splash
+  gh_user: Kney-Delach
+  repo: Splash
+  #url:  /static/assets/projects/Musical-Pipes/MP-Build.zip
+  img: /static/assets/projects/Splash/Images/Logo.png
+  desc: A color switching puzzle game concept developed for mobile
+
+- name: 🎮  | Seven Ravens
   i18n: rop
+  gh_user: Kney-Delach
+  repo: Seven-Ravens
   url: /static/assets/projects/Ring-Of-Power/ROP-Build.zip
   img: /static/assets/projects/Ring-Of-Power/ROP-Logo.png
-  desc: Ring of Power is a narrative based storytelling game [prototype]. The narrative of this game is based on the story "The Seven Ravens". The game provides a diverse set of paths and results to the storyline.
+  desc: A top-down game used to showcase a parallel story-telling engine 
 
-- name: MapexQL
+- name: 📚  | MapexQL
   i18n: mapex
   url: /static/assets/projects/MQL/MQL-Manual.pdf #https://kney-delach.github.io/MQL-Manual.pdf
   img: /static/assets/projects/MQL/MQL-Logo-Short.png
-  desc: Mapex is a programming language which was created with the goal of being able to write a program with it to solve any particular conjunctive query. It was written using the Haskell programming language.
+  desc: A programming language written in Haskell with the aim to write programs to solve any conjunctive query
 
-- name: Digital Doilies
+- name: 📚  | Digital Doilies
   i18n: dollies
   url: /static/assets/projects/Digital-Doilies/Digital-Doilies.jar #https://kney-delach.github.io/MQL-Manual.pdf
   img: /static/assets/projects/Digital-Doilies/Doilie-Icon.jpg
-  desc: This is the first Java applet I ever built, it was created with the purpose of being able to draw Digital Doilies. (The icon for this project was made in this program)
+  desc: My first programming project, developed with the aim of creating Digital Doilies
