@@ -1,68 +1,197 @@
----
-layout: blog
-title: index
-permalink: /
----
+<html>
+    <head>
+        <title>Ori Lazar</title>
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="programmer, coding, console, cv, java, haskell, OpenGL, c, c++, games developer, software developer, english, israeli, hebrew" />
+        <meta name="description" content="Games and software developer interested in c++ engine development." />
 
-<div class="navbar-wrapper">
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#page-top" id="i18_title"><span data-i18n="website.title">{{ site.title }}</span></a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right" id="i18_navbar">
-          {% for section in site.data.landing %}
-          <li>
-            {% if section.page %}
-              <a class="page-scroll" href="{{ section.page}} ">
-            {% else %}
-              <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
-            {% endif %}
-              <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
-            </a>
-          </li>
-          {% endfor %}
-          {% for language in site.data.index.language %}
-          <li>
-            <a id="set_lang_{{ language.locale }}" class="btn btn-sm set_{{ language.locale }}" data-locale="{{ language.locale }}">
-              <img src="{{ language.flag | prepend: site.baseurl }}" height="16" width="16">
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
-{% if site.index_carousel %}
-{% include carousel.html %}
-{% endif %}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131339512-4"></script> -->
+        <!-- <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-{% for section in site.data.landing %}
-{% assign loopindex = forloop.index | modulo: 2 %}
-<section id="{{ section.id }}" class="features {% if loopindex != 1 %} gray-section {% endif %} {{ section.css }}" style="margin-top: 0;">
-  {% include sections/{{section.tpl}} %}
-</section>
-{% endfor %}
-<style>
-iframe {
-  -moz-transform: scale(0.25, 0.25);
-  -webkit-transform: scale(0.25, 0.25);
-  -o-transform: scale(0.25, 0.25);
-  -ms-transform: scale(0.25, 0.25);
-  transform: scale(0.25, 0.25);
-  -moz-transform-origin: top left;
-  -webkit-transform-origin: top left;
-  -o-transform-origin: top left;
-  -ms-transform-origin: top left;
-  transform-origin: top left;
-}
-</style>
-<!-- <iframe src="https://www.maimemo.com/share/page/?uid=779139&pid=660" style="display: none;"></iframe> -->
+          gtag('config', 'UA-131339512-4');
+        </script> -->
+
+        <!-- Style -->
+        <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="icon.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="LandingStyle.css">
+
+        <style>
+            #all_content {
+                position:fixed;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+
+                user-select:none;
+
+                animation: fadein 1s;
+            }
+
+            #title {
+                position: relative;
+                width: min-content;
+                margin: 50px auto;
+
+                font-size: 50pt
+            }
+            #body
+            {
+                width: 100%;
+                text-align: center;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                font-size: 12pt;
+                font-family: 'Major Mono Display', monospace;
+                color: #ffffff;
+            }
+
+            #r2d2
+            {
+                width: 100%;
+                text-align: center;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                font-size: 12pt;
+                font-family: 'VT323', monospace;
+            }
+
+            #title_foreground {
+               font-family: 'Major Mono Display', monospace;
+
+               color: #58a6ff;
+               width: min-content;
+               text-align: center;
+               z-index: 1;
+            }
+
+            #title_background {
+               position: absolute;
+               opacity: 0.7;
+               color: rgb(201, 110, 118);
+               top: 0px;
+               left: 0px;
+               width: 0px;
+               font-family: 'Major Mono Display', monospace;
+
+               z-index: -1;
+            }
+
+            #button_container {
+               margin: 20px auto;
+               width: 100%;
+               height:max-content;
+            }
+            
+            .projects_button {
+               font-family: 'VT323', monospace;
+               font-size: 15pt;
+               padding: 5px 5px;
+               width: 100%;
+               border: 3px solid #000000;
+               color: #ffffff;
+               text-align: center; 
+               text-decoration: none;
+               display: inline-block;
+
+            }
+            .projects_button:hover {
+               background-color: #065dffc0;
+               border: 2px solid #ffffff;
+               color: #ffffff;
+            }
+
+            #terminal_button {
+               font-family: 'VT323', monospace;
+               font-size: 15pt;
+               padding: 10px 20px;
+               width: max-content;
+               border: 3px solid #ffffff;
+               color: #ffffff;
+               text-decoration: none;
+            }
+            #terminal_button:hover 
+            {
+                background-color: #065dffc0;
+                color: rgb(255, 255, 255);
+            }
+            #quick_links {
+               width: 100%;
+               text-align: center;
+               margin-top: 50px;
+               color: rgb(255, 255, 255);
+            }
+
+            i.fa {
+               text-decoration: none;
+               padding: 5px;
+               font-size: 20pt;
+               color: rgb(255, 255, 255);
+            }
+
+            i.fa:hover {
+               color: #ffffff;
+               background-color: #065dffc0;
+               border: 2px solid #ffffff;
+            }
+
+            #tooltip {
+               font-family: 'VT323', monospace;
+               font-size: 15pt;
+               color: rgb(255, 255, 255);
+               padding: 5px;
+               margin: 0;
+            }
+
+            @keyframes fadein {
+                from {
+                    opacity: 0;
+                } to {
+                    opacity: 1;
+                }
+            }
+        </style>
+
+        <!-- Logic -->
+        <script src="javascript/type.js"></script>
+        <script src="javascript/quick_links.js"></script>
+    </head>
+
+    <body>
+        <div id="all_content">
+            <div id="title">
+            <div id="title_foreground"></div> 
+            </div>
+            <div id="body"> Hey there, thanks for stopping by!<br/><br/>
+            </div>
+            <div id="button_container">
+                <a href="Data/projects/index.html" class="projects_button">jmp Projects;</a>
+            </div>
+            <div id="button_container">
+                    <a href="Data/projects/Cmd/index.html" class="projects_button">jmp Skills;</a>
+            </div>
+            <div id="button_container">
+                    <a href="Data/projects/Cmd/index.html" class="projects_button">jmp Career;</a>
+            </div>
+            <div id="button_container">
+                    <a href="Data/projects/Cmd/index.html" class="projects_button">jmp Terminal Website;</a>
+            </div>
+            <div id="quick_links">
+                <p id ="tooltip">Quick Links</p>
+                <a href="Data/CV/ORI_LAZAR_2019.pdf" target="_blank" onmouseover="setTooltipText('Download CV!')" onmouseout="resetTooltip()"><i class="fa fa-file-text"></i></a>
+                <a href="mailto:orilazar.cs@gmail.com" onmouseover="setTooltipText('Email Me!')" onmouseout="resetTooltip()"><i class="fa fa-envelope"></i></a>
+                <a href="https://github.com/Kney-Delach" onmouseover="setTooltipText('Check out my github!')" onmouseout="resetTooltip()"><i class="fa fa-github"></i></a>
+                <a href="Data/Projects/Mirage/" onmouseover="setTooltipText('Play Mirage!')" onmouseout="resetTooltip()"><i class="fa fa-gamepad"></i></a>
+                <a href="Data/Projects/Cmd/" onmouseover="setTooltipText('Try out my Terminal Website!')" onmouseout="resetTooltip()"><i class="fa fa-terminal"></i></a>
+            </div>
+        </div>
+    </body>
+</html>
