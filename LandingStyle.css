@@ -2,9 +2,10 @@
 
 body {
     background-color: #1d2e1f;
-    background-image: radial-gradient(
+    /* background-image: linear-gradient(
         rgba(0, 0, 255, 0.2), #1c2619 102% 
-    );
+    ); */
+    background-image: repeating-linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2),#1c2619  102% ); 
 
     height: 100vh;
 
@@ -23,9 +24,10 @@ body::after {
     width: 100vw;
     height: 100vh;
     pointer-events: none;
-    background-image: radial-gradient(
+    /* background-image: radial-gradient(
         rgba(0, 0, 0, 0), rgba(1, 1, 1, 0.4) 93%
-    );
+    ); */
+
 }
 
 div#crtEffect {
