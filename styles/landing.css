@@ -12,7 +12,7 @@ body
     text-shadow: 0 0 3px;
 
     /* DEBUG VARIABLES */
-    border: 3px solid rgb(255, 255, 0);
+    /* border: 3px solid rgb(255, 255, 0); */
   }
 
 #title
@@ -24,21 +24,120 @@ body
     width: max-content; /* Takes up full width of screen */
 
     /* DEBUG VARIABLES */
-    border: 3px solid rgb(149, 255, 0);
+    /* border: 3px solid rgb(149, 255, 0); */
+}  
+
+#title_description
+{
+    color: rgba(255, 255, 255, 255);
+    font-family: 'VT323', 'monospace'; /* font family */
+    font-size: 30pt; /* size of the font */
+    margin-top: 25px auto; /* vertical margin from top, horizontal centering (using auto) */
+    width: max-content; /* Takes up full width of screen */
+
+    /* DEBUG VARIABLES */
+    /* border: 3px solid rgb(149, 255, 0); */
 }  
 
 /* An image encapsulating the full width of a page */
 .landing_logo
 {
     margin: 10px auto;
-    height: 30vh;
+    height: 25vh;
 
     /* DEBUG VARIABLES */
-    border: 3px solid rgb(255, 102, 0);
+    /* border: 3px solid rgb(255, 102, 0); */
 }
+
+/* List for buttons */
+ul 
+{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-self:center;
+    width: max-content; /* Takes up full width of screen */
+    /* border: 3px solid rgb(255, 102, 0); */
+    padding: 0;
+
+}
+
+ul li 
+{
+    align-self:center;
+    /* border: 3px solid rgba(92, 250, 0, 0.938); */
+
+    /* display: block; */
+    width: max-content; /* Takes up full width of screen */
+}
+
+ul li a 
+{
+    align-self:center;
+
+    --fill-color: #ffffff;
+    --fill-color_outer: #ffffff;
+    width: max-content; /* Takes up full width of screen */    
+    display: block;
+    font-family: "VT323", "monospace";
+    font-size: 45pt;
+    font-weight: 100;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--fill-color_outer);
+    background: linear-gradient(90deg, var(--fill-color) 0%, var(--fill-color) 100%);
+    background-size: 0;
+    background-position: left;
+    background-repeat: no-repeat;
+    color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+    transition: 0.75s linear;
+}
+
+ul li a:hover 
+{
+    background-size: 100%;
+}
+  
+
+/* Shortcut links */
+#quick_links 
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: rgb(255, 255, 255);
+}
+
+/* Tooltip for quick links. */
+#tooltip 
+{
+    font-family: 'VT323', monospace;
+    font-size: 15pt;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 0;
+}
+
+/* Icons.*/
+i.fa {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 20pt;
+    color: rgb(255, 255, 255);
+ }
+
+ /* i.fa:hover {
+    color: #ffffff;
+    background-color: #065dffc0;
+    border: 2px solid #ffffff;
+ } */
 
 /* The following sections contain references to effect classes */
 /* for words */
+
 word
 { 
     display:inline-block; 
@@ -70,3 +169,4 @@ letter.initial
   transform:scale(8); 
   transform-origin:150% 50%; 
 }
+
