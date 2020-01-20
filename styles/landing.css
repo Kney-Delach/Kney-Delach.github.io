@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+
+body
+{
+    background-color: #1d2e1f;
+    background-image: repeating-linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2),#1c2619  102% ); 
+    height: 100vh;
+    display: block; /* */
+    margin: 0px; /* rhs margin on the page */
+    font-size: 15pt;
+    text-shadow: 0 0 3px;
+
+    /* DEBUG VARIABLES */
+    border: 3px solid rgb(255, 255, 0);
+  }
+
+#title
+{
+    color: rgba(255, 255, 255, 255);
+    font-family: 'VT323', 'monospace'; /* font family */
+    font-size: 60pt; /* size of the font */
+    margin: auto auto; /* vertical margin from top, horizontal centering (using auto) */
+    width: max-content; /* Takes up full width of screen */
+
+    /* DEBUG VARIABLES */
+    border: 3px solid rgb(149, 255, 0);
+}  
+
+/* An image encapsulating the full width of a page */
+.landing_logo
+{
+    margin: 10px auto;
+    height: 30vh;
+
+    /* DEBUG VARIABLES */
+    border: 3px solid rgb(255, 102, 0);
+}
+
+/* The following sections contain references to effect classes */
+/* for words */
+word
+{ 
+    display:inline-block; 
+}
+
+/* for links */
+a letter
+{ 
+    color:inherit; 
+} 
+
+/* This is the NORMAL state of a character */
+letter
+{ 
+  display:inline-block; 
+  white-space:pre; 
+  background:none; 
+  transition:.4s; 
+}
+
+/* Below is the INITIAL state of a character */
+letter.initial
+{ 
+  opacity:0; 
+  text-shadow:0 0 9px; 
+  color:#FFF; 
+  -webkit-transform:scale(8); 
+  -webkit-transform-origin:150% 50%; 
+  transform:scale(8); 
+  transform-origin:150% 50%; 
+}

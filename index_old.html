@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>Ori Lazar</title>
+        <!-- <link rel="stylesheet" type="text/css" href="style/landing.css"> -->
+
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="programmer, coding, console, cv, java, haskell, OpenGL, c, c++, games developer, software developer, english, israeli, hebrew" />
+        <meta name="description" content="Games and software developer interested in c++ engine development." />
+
+
+        <!-- Style -->
+        <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="icon.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="LandingStyle.css">
+
+        <style>
+            #all_content {
+                position:fixed;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+
+                user-select:none;
+
+                animation: fadein 1s;
+            }
+            
+            #title {
+                position: relative;
+                width: min-content;
+                margin: 50px auto;
+
+                font-size: 50pt
+            }
+            #body
+            {
+                width: 100%;
+                text-align: center;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                font-size: 12pt;
+                font-family: 'Major Mono Display', monospace;
+                color: #ffffff;
+            }
+
+            #r2d2
+            {
+                width: 100%;
+                text-align: center;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                font-size: 12pt;
+                font-family: 'VT323', monospace;
+            }
+
+            #title_foreground {
+               font-family: 'Major Mono Display', monospace;
+               color: #065dff;
+               width: min-content;
+               text-align: center;
+               z-index: 1;
+            }
+
+            #title_background {
+               position: absolute;
+               opacity: 0.7;
+               color: rgb(201, 110, 118);
+               top: 0px;
+               left: 0px;
+               width: 0px;
+               font-family: 'Major Mono Display', monospace;
+
+               z-index: -1;
+            }
+
+            #button_container {
+               margin: 20px auto;
+               width: 100%;
+               height:max-content;
+            }
+            
+            .projects_button {
+               font-family: 'VT323', monospace;
+               font-size: 15pt;
+               padding: 5px 5px;
+               width: 100%;
+               border: 3px solid #000000;
+               color: #ffffff;
+               text-align: center; 
+               text-decoration: none;
+               display: inline-block;
+
+            }
+            .projects_button:hover {
+               background-color: #065dffc0;
+               border: 2px solid #ffffff;
+               color: #ffffff;
+            }
+
+            #terminal_button {
+               font-family: 'VT323', monospace;
+               font-size: 15pt;
+               padding: 10px 20px;
+               width: max-content;
+               border: 3px solid #ffffff;
+               color: #ffffff;
+               text-decoration: none;
+            }
+            #terminal_button:hover 
+            {
+                background-color: #065dffc0;
+                color: rgb(255, 255, 255);
+            }
+            #quick_links {
+               width: 100%;
+               text-align: center;
+               margin-top: 50px;
+               color: rgb(255, 255, 255);
+            }
+
+            i.fa {
+               text-decoration: none;
+               padding: 5px;
+               font-size: 20pt;
+               color: rgb(255, 255, 255);
+            }
+
+            i.fa:hover {
+               color: #ffffff;
+               background-color: #065dffc0;
+               border: 2px solid #ffffff;
+            }
+
+            #tooltip {
+               font-family: 'VT323', monospace;
+               font-size: 15pt;
+               color: rgb(255, 255, 255);
+               padding: 5px;
+               margin: 0;
+            }
+
+            @keyframes fadein {
+                from {
+                    opacity: 0;
+                } to {
+                    opacity: 1;
+                }
+            }
+        </style>
+
+        <!-- Logic -->
+        <script src="javascript/type.js"></script>
+        <script src="javascript/quick_links.js"></script>
+        <script src= "javascript/bg_dots.js"></script>
+    </head>
+    <!-- <canvas id="canvas"></canvas> -->
+    <body>
+       
+        <div id="all_content">
+            <div id="title">
+            <div id="title_foreground"></div> 
+            </div>
+            <div id="body"> Hey there, thanks for stopping by!<br/><br/>
+            </div>
+            <div id="button_container">
+                <a href="https://kney-delach.github.io/Data/Projects/index.html" class="projects_button">jmp Projects;</a>
+            </div>
+            <!-- <div id="button_container">
+                    <a href="https://kney-delach.github.io/Data/Skills/index.html" class="projects_button">jmp Skills;</a>
+            </div>
+            <div id="button_container">
+                    <a href="https://kney-delach.github.io/Data/Career/index.html" class="projects_button">jmp Career;</a>
+            </div>
+            <div id="button_container">
+                    <a href="https://kney-delach.github.io/Data/Blog/index.html" class="projects_button">jmp Blog;</a>
+            </div> -->
+            <div id="quick_links">
+                <p id ="tooltip">Quick Links</p>
+                <a href="Data/CV/ORI_LAZAR_2019.pdf" target="_blank" onmouseover="setTooltipText('Download My CV!')" onmouseout="resetTooltip()"><i class="fa fa-file-text"></i></a>
+                <a href="https://github.com/Kney-Delach" onmouseover="setTooltipText('Check Out My Github!')" onmouseout="resetTooltip()"><i class="fa fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCxb2vCV-1go3d0T8kUQSXbA" onmouseover="setTooltipText('Check Out My Youtube!')" onmouseout="resetTooltip()"><i class="fa fa-youtube"></i></a>
+                <!-- <a href="Data/Projects/Cmd/index.html" onmouseover="setTooltipText('Try out my Terminal Website!')" onmouseout="resetTooltip()"><i class="fa fa-terminal"></i></a> -->
+                <a href="mailto:orilazar.cs@gmail.com" onmouseover="setTooltipText('Email Me!')" onmouseout="resetTooltip()"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+    </body>
+</html>
