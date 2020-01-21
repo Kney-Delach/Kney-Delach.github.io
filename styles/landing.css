@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
-
+@font-face
+{
+    font-family: cascadia;
+    src: url("fonts/cascadia.ttf");
+}
 body
 {
     background-color: #1d2e1f;
@@ -12,7 +16,7 @@ body
     text-shadow: 0 0 3px;
 
     /* DEBUG VARIABLES */
-    /* border: 3px solid rgb(255, 255, 0); */
+    border: 0px solid rgb(255, 255, 0);
   }
 
 #title
@@ -24,20 +28,34 @@ body
     width: max-content; /* Takes up full width of screen */
 
     /* DEBUG VARIABLES */
-    /* border: 3px solid rgb(149, 255, 0); */
+    border: 0px solid rgb(149, 255, 0);
 }  
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 
 #title_description
 {
     color: rgba(255, 255, 255, 255);
-    font-family: 'VT323', 'monospace'; /* font family */
-    font-size: 30pt; /* size of the font */
+    font-family: 'cascadia', 'monospace'; /*'Source Code Pro', monospace;  /* font family */
+    /*font-size: 30pt; /* size of the font */
     margin-top: 25px auto; /* vertical margin from top, horizontal centering (using auto) */
-    width: max-content; /* Takes up full width of screen */
-
+   /* width: max-content; /* Takes up full width of screen */
+    
+    font-size: 2.2rem; 
+    line-height: 1.5;  
+    letter-spacing: -.05rem;
+    
     /* DEBUG VARIABLES */
-    /* border: 3px solid rgb(149, 255, 0); */
+    border: 0px solid rgb(149, 255, 0);
 }  
+
+#about_me
+{
+    color: rgba(255, 255, 255, 255);
+    font-family: 'cascadia', 'monospace';
+    font-size: 1.8rem; 
+    letter-spacing: -.05rem;
+
+}
 
 /* An image encapsulating the full width of a page */
 .landing_logo
@@ -46,7 +64,7 @@ body
     height: 25vh;
 
     /* DEBUG VARIABLES */
-    /* border: 3px solid rgb(255, 102, 0); */
+    border: 0px solid rgb(255, 102, 0);
 }
 
 /* List for buttons */
@@ -57,7 +75,7 @@ ul
     list-style-type: none;
     align-self:center;
     width: max-content; /* Takes up full width of screen */
-    /* border: 3px solid rgb(255, 102, 0); */
+    border: 0px solid rgb(255, 102, 0);
     padding: 0;
 
 }
@@ -65,7 +83,7 @@ ul
 ul li 
 {
     align-self:center;
-    /* border: 3px solid rgba(92, 250, 0, 0.938); */
+    border: 0px solid rgba(92, 250, 0, 0.938);
 
     /* display: block; */
     width: max-content; /* Takes up full width of screen */
@@ -79,20 +97,20 @@ ul li a
     --fill-color_outer: #ffffff;
     width: max-content; /* Takes up full width of screen */    
     display: block;
-    font-family: "VT323", "monospace";
-    font-size: 45pt;
+    font-family: "cascadia", "monospace";
+    font-size: 3rem;
     font-weight: 100;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-text-stroke: 2px var(--fill-color_outer);
-    background: linear-gradient(90deg, var(--fill-color) 0%, var(--fill-color) 100%);
+    background: linear-gradient(90deg, var(--fill-color) 100%, var(--fill-color) 100%);
     background-size: 0;
     background-position: left;
     background-repeat: no-repeat;
     color: transparent;
     -webkit-background-clip: text;
             background-clip: text;
-    transition: 0.75s linear;
+    transition: 0.35s linear;
 }
 
 ul li a:hover 
@@ -106,7 +124,7 @@ ul li a:hover
 {
     width: 100%;
     text-align: center;
-    margin-top: 2px;
+    margin-top: -10px;
     margin-bottom: 2px;
     color: rgb(255, 255, 255);
 }
@@ -170,3 +188,58 @@ letter.initial
   transform-origin:150% 50%; 
 }
 
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.btn {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  @media (min-width: 600px) {
+    .btn {
+      margin: 0 1em 2em;
+    }
+  }
+  .btn:hover {
+    text-decoration: none;
+  }
+
+.btn-5 {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .btn-5:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+  }
+  
+  #button_a
+  {
+    text-align: center; 
+    padding: 10px;
+  }
