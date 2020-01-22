@@ -1,0 +1,2 @@
+<hr>
+<div id="about_me">Skills coming soon!</div>

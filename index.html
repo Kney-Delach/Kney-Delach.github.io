@@ -23,7 +23,7 @@
         <link rel="icon" type="image/png" href="./data/images/icon_trans.png">
 
         <!-- Scripts -->
-        <script src="scripts/quick_links.js"></script>
+        <!-- <script src="scripts/quick_links.js"></script> -->
 
         <!-- Add google analytics data -->
 
@@ -42,21 +42,37 @@
                 <a href="https://www.youtube.com/channel/UCxb2vCV-1go3d0T8kUQSXbA" onmouseover="setTooltipText('Check Out My Youtube!')" onmouseout="resetTooltip()"><i class="fa fa-youtube"></i></a>
                 <a href="mailto:orilazar.cs@gmail.com" onmouseover="setTooltipText('Email Me!')" onmouseout="resetTooltip()"><i class="fa fa-envelope"></i></a>
             </div>
-            <!-- <div id="title_description">High Performance C++ Programmer & Game Developer</div> -->
             <hr>
             <div id="about_me">Hi there and thanks for stopping by! My name is Ori, i'm a passionate programmer who feels enjoyment and fulfillment from the journey of creating software.</div>
             <hr>
-            <a id="button_a"  href="https://google.com" class="btn btn-5">Projects</a>
-            <a id="button_a"  href="https://google.com" class="btn btn-5">Education</a>
-            <a id="button_a"  href="https://google.com" class="btn btn-5">Skills</a>
-            
-            <!-- <hr> -->
-            <!-- <div id="about_me">Container for data of each section goes in here</div>
-            <hr> -->
-        </a>   
-        
+
+            <section class="buttons">
+                <div class="button_container">
+                    <div id="projects-Button" class="btn btn-5 kd-button">Projects</div> 
+                    <div id="career-Button" class="btn btn-5 kd-button">Career</div> 
+                    <div id="skills-Button" class="btn btn-5 kd-button">Skills</div> 
+                    <div id="blog-Button" class="btn btn-5 kd-button">Blog</div> 
+                </div>
+            </section>
+        </div>
+
+
         <!-- Scripts used in top body -->
         <script src="scripts/text_animation.js"></script>
     </body>
 
+    <body id="bottom">
+        
+        <!-- Data_Labels -->
+        <div id="data_selection_area" class="container kd-selection-content" style="opacity: 0;">   
+
+        </div>
+
+        <!-- Data text area -->        
+        <div id="main_content_area" class="container" style="margin-top: 1%" align="center">
+
+        </div>
+
+        <script src="scripts/button_nav_selection.js"></script>
+    </body>
 </html>

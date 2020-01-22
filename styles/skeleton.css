@@ -379,9 +379,16 @@
   .container:after,
   .row:after,
   .u-cf {
-    content: "";
+    content: none;
     display: table;
-    clear: both; }
+    clear: both; 
+
+  }
+
+  /* .row:hover{
+    	border: 2px solid red;
+
+  } */
   
   
   /* Media Queries
