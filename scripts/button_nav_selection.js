@@ -22,7 +22,7 @@ let buttonLock = false;
 for(let i = 0; i < ContentNames.length; ++i)
 {
     IncludeText.push("");
-    fetch("./Data/pages/" + ContentNames[i] + ".txt")
+    fetch("./Data/pages/" + ContentNames[i] + ".html")
     .then( r => r.text() )
     .then( t => IncludeText[i] = t )
 }

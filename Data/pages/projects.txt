@@ -1,2 +1,0 @@
-<hr>
-<div id="about_me">Projects coming soon!</div>

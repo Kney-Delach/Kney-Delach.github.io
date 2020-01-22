@@ -54,7 +54,6 @@ h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
     font-family: 'cascadia', 'monospace';
     font-size: 1.8rem; 
     letter-spacing: -.05rem;
-
 }
 
 /* An image encapsulating the full width of a page */
@@ -315,4 +314,67 @@ letter.initial
 	/* transition: transform .3s; */
 	/* max-width:10vh; */
 	vertical-align: middle;
+}
+
+#pt
+{
+    color: rgba(255, 255, 255, 255);
+    font-family: 'cascadia', 'monospace';
+    font-size: 1.8rem; 
+    letter-spacing: -.05rem;
+    text-align: center;
+}
+
+.proj-button
+{
+    border: 2px solid white;
+	position: relative;
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+	transition: transform .3s;
+	max-width:10vh;
+    vertical-align: middle;
+}
+
+.proj-button:hover {
+    
+	border: 2px solid white;
+}
+
+.proj-button-idle
+{
+	position: relative;
+	display: inline-block;
+	border: 2px solid black;
+	border-radius: 50%;
+	overflow: hidden;
+	transition: transform .3s;
+	max-width:10vh;
+	vertical-align: middle;
+
+	transition: filter .5s;
+    -webkit-filter: grayscale(90%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(90%);
+}
+
+.proj-button-img 
+{
+	overflow: hidden;
+	transition: transform .5s;
+	max-width: 100%;
+	width: auto;
+    height: auto;
+	vertical-align: middle;
+}
+
+.proj-button-img:hover 
+{
+	transform: scale(1.3);
+}
+
+#proj-button-section
+{
+    /* border: 2px solid #0dfa2d; */
+    text-align: center;
 }
