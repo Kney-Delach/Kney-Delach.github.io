@@ -24,7 +24,7 @@ body
     color: rgba(255, 255, 255, 255);
     font-family: 'VT323', 'monospace'; /* font family */
     font-size: 60pt; /* size of the font */
-    margin: auto auto; /* vertical margin from top, horizontal centering (using auto) */
+    margin: -25px auto; /* vertical margin from top, horizontal centering (using auto) */
     width: max-content; /* Takes up full width of screen */
 
     /* DEBUG VARIABLES */
@@ -240,6 +240,8 @@ letter.initial
   
   #button_a
   {
+    /* border: 0px solid red; */
+
     text-align: center; 
     padding: 10px;
   }
