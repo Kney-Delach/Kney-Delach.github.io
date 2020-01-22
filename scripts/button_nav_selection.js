@@ -10,7 +10,7 @@ const ContentNames =
     "blog"
 ];
 
-const TextAreaMinHeightExtended = "900px";
+const TextAreaMinHeightExtended = "200px";
 const TextAreaMinHeightClosed = "0px";
 const TransitionDuration = 0;
 
@@ -54,12 +54,10 @@ document.addEventListener('DOMContentLoaded', function()
 {
     let textArea = document.getElementById("data_selection_area");
     let buttons = [];
-    let textFiles = [];
     
     for (let i = 0; i < ContentNames.length; ++i) 
     {
 		buttons.push(document.getElementById(ContentNames[i] + "-Button")); /* Add all relevant buttons to array. */
-		textFiles.push(document.getElementById(ContentNames[i] + "-file")); /* Not sure what this does. */
     }
     
     /* Add event listener to buttons for click events */
@@ -87,21 +85,23 @@ document.addEventListener('DOMContentLoaded', function()
 						textArea.style.minHeight = TextAreaMinHeightExtended;
 					}
 				}
-				else {
+                else 
+                {
                     for (let j = 0; j < buttons.length; ++j) 
                     {
 						buttons[j].class = "kd-button";
 					}
 					textArea.innerHTML = "";
 					lastButtonIndex = -1;
-					// smoothScroll(0);
-					setTimeout(function() {
+                    setTimeout(function() 
+                    {
                         textArea.style.minHeight = TextAreaMinHeightClosed;
                         textArea.style.opacity = 0;
 					}, TransitionDuration / 2);
 				}
 				buttonLock = true;
-				setTimeout(function() {
+                setTimeout(function() 
+                {
 					buttonLock = false;
 				}, TransitionDuration);
 			}

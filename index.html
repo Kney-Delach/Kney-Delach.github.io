@@ -48,14 +48,13 @@
 
             <section class="buttons">
                 <div class="button_container">
-                    <div id="projects-Button" class="btn btn-5 kd-button">Projects</div> 
-                    <div id="career-Button" class="btn btn-5 kd-button">Career</div> 
-                    <div id="skills-Button" class="btn btn-5 kd-button">Skills</div> 
-                    <div id="blog-Button" class="btn btn-5 kd-button">Blog</div> 
+                    <div id="projects-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Projects</div> 
+                    <div id="career-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Career</div> 
+                    <div id="skills-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Skills</div> 
+                    <div id="blog-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Blog</div> 
                 </div>
             </section>
         </div>
-
 
         <!-- Scripts used in top body -->
         <script src="scripts/text_animation.js"></script>
@@ -64,6 +63,8 @@
     <div id="bottom">
             <!-- Data_Labels -->
             <div id="data_selection_area" class="container kd-selection-content" style="opacity: 0;"></div>
+            <div id="project_data_area" class="container kd-selection-content" style="opacity: 0;"> <hr> </div>
         <script src="scripts/button_nav_selection.js"></script>
+
     </div>
 </html>

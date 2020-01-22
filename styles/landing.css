@@ -335,29 +335,37 @@ letter.initial
 	transition: transform .3s;
 	max-width:10vh;
     vertical-align: middle;
+
 }
 
 .proj-button:hover {
     
-	border: 2px solid white;
+    border: 2px solid white;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5); 
+    outline-color: rgba(255, 255, 255, 0);
+    text-shadow: 1px 1px 2px #427388;
 }
 
-.proj-button-idle
+.proj-button-active
 {
 	position: relative;
 	display: inline-block;
-	border: 2px solid black;
+	border: 2px solid yellow;
 	border-radius: 50%;
 	overflow: hidden;
 	transition: transform .3s;
 	max-width:10vh;
 	vertical-align: middle;
 
-	transition: filter .5s;
-    -webkit-filter: grayscale(90%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(90%);
+
 }
 
+.proj-button-active:hover
+{
+    box-shadow: inset 0 0 20px rgba(221, 189, 11, 0.5), 0 0 20px rgba(236, 221, 7, 0.5); 
+    outline-color: yellow;
+    text-shadow: 1px 1px 2px yellow;
+}
 .proj-button-img 
 {
 	overflow: hidden;
@@ -365,12 +373,12 @@ letter.initial
 	max-width: 100%;
 	width: auto;
     height: auto;
-	vertical-align: middle;
+    vertical-align: middle;
 }
 
 .proj-button-img:hover 
 {
-	transform: scale(1.3);
+	/* transform: scale(1.3); */
 }
 
 #proj-button-section
