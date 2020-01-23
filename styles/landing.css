@@ -7,8 +7,11 @@
 }
 body
 {
-    background-color: #1d2e1f;
+    /* background-color: #1d2e1f;
     background-image: repeating-linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2),#1c2619  102% ); 
+     */
+    background-color: #1d2e1f;
+    background-image: repeating-radial-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2),#1c2619  102% );
     height: 200vh;
     display: block; /* */
     /*margin: 0px;*/ /* rhs margin on the page */
@@ -327,15 +330,17 @@ letter.initial
 
 .proj-button
 {
-    border: 3px solid white;
+    border: 2px solid white;
 	position: relative;
 	display: inline-block;
 	border-radius: 50%;
 	overflow: hidden;
 	transition: transform .3s;
 	max-width:10vh;
+	min-width:10vh;
+    min-height:10vh;
+	max-height:10vh;
     vertical-align: middle;
-
 }
 
 .proj-button:hover {
@@ -350,14 +355,15 @@ letter.initial
 {
 	position: relative;
 	display: inline-block;
-	border: 3px solid yellow;
+	border: 2px solid yellow;
 	border-radius: 50%;
 	overflow: hidden;
 	transition: transform .3s;
-	max-width:10vh;
 	vertical-align: middle;
-
-
+	max-width:10vh;
+	min-width:10vh;
+    min-height:10vh;
+	max-height:10vh;
 }
 
 .proj-button-active:hover
@@ -366,6 +372,7 @@ letter.initial
     outline-color: yellow;
     text-shadow: 1px 1px 2px yellow;
 }
+
 .proj-button-img 
 {
 	overflow: hidden;
