@@ -6,7 +6,8 @@ const ProjectNames =
 [
     "mirage",
     "exalted",
-    "15_puzzle"
+    "15_puzzle",
+    "game_tech"
 ]
 
 let ProjectText = [];
@@ -25,7 +26,6 @@ for(let i = 0; i < ProjectNames.length; ++i)
 
 let bLock = false;
 let prevBtnIndex = -1; 
-
 
 function LoadProject(button, btnIndex)
 {
