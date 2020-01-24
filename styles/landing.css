@@ -193,6 +193,8 @@ letter.initial
 
 
 .buttons {
+  font-family: "cascadia", "monospace";
+
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
