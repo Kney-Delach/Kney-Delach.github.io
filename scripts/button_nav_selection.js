@@ -7,7 +7,7 @@ const ContentNames =
     "projects",
     "career",
     "skills",
-    "blog"
+    "photography"
 ];
 
 const TextAreaMinHeightExtended = "200px";
