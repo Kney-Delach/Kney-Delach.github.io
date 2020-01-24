@@ -193,6 +193,8 @@ letter.initial
 
 
 .buttons {
+  font-family: "cascadia", "monospace";
+
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -321,16 +323,16 @@ letter.initial
 
 #pt
 {
-    color: rgba(255, 255, 255, 255);
-    font-family: 'cascadia', 'monospace';
-    font-size: 1.8rem; 
-    letter-spacing: -.05rem;
-    text-align: center;
+  color: rgba(255, 255, 255, 255);
+  font-family: 'cascadia', 'monospace';
+  font-size: 1.8rem; 
+  letter-spacing: -.05rem;
+  text-align: center;
 }
 
 .proj-button
 {
-    border: 2px solid white;
+  border: 2px solid white;
 	position: relative;
 	display: inline-block;
 	border-radius: 50%;
@@ -338,17 +340,17 @@ letter.initial
 	transition: transform .3s;
 	max-width:10vh;
 	min-width:10vh;
-    min-height:10vh;
+  min-height:10vh;
 	max-height:10vh;
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .proj-button:hover {
     
-    /* border: 3px solid white; */
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5); 
-    outline-color: rgba(255, 255, 255, 0);
-    text-shadow: 1px 1px 2px #427388;
+  /* border: 3px solid white; */
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5); 
+  outline-color: rgba(255, 255, 255, 0);
+  text-shadow: 1px 1px 2px #427388;
 }
 
 .proj-button-active
@@ -362,15 +364,15 @@ letter.initial
 	vertical-align: middle;
 	max-width:10vh;
 	min-width:10vh;
-    min-height:10vh;
+  min-height:10vh;
 	max-height:10vh;
 }
 
 .proj-button-active:hover
 {
-    box-shadow: inset 0 0 20px rgba(221, 189, 11, 0.5), 0 0 20px rgba(236, 221, 7, 0.5); 
-    outline-color: yellow;
-    text-shadow: 1px 1px 2px yellow;
+  box-shadow: inset 0 0 20px rgba(221, 189, 11, 0.5), 0 0 20px rgba(236, 221, 7, 0.5); 
+  outline-color: yellow;
+  text-shadow: 1px 1px 2px yellow;
 }
 
 .proj-button-img 
@@ -379,8 +381,8 @@ letter.initial
 	transition: transform .5s;
 	max-width: 100%;
 	width: auto;
-    height: auto;
-    vertical-align: middle;
+  height: auto;
+  vertical-align: middle;
 }
 
 .proj-button-img:hover 
@@ -392,4 +394,54 @@ letter.initial
 {
     /* border: 2px solid #0dfa2d; */
     text-align: center;
+}
+
+
+/****************** Career section *********************/
+
+/****************** Skills section *********************/
+
+#skill-chart-title
+{
+  color: rgba(255, 255, 255, 255);
+  text-align: center; 
+  font-family: 'VT323', monospace;
+  font-size: 3.5rem; 
+  letter-spacing: -.05rem;
+}
+
+/* ---------------------------------------------------- */
+
+.chart_parent
+{
+  border: 2px dotted white;
+}
+.chart .metric 
+{
+  background-color: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0);
+  color: white;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  padding: 10px;
+  text-align: left;
+  box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6);
+  font-family: 'cascadia', 'monospace';
+
+}
+.chart .metric .metric-value {
+  font-weight: bold;
+}
+
+.chart-horizontal {
+  width: 100%;
+}
+.chart-horizontal .metric {
+  margin-bottom: 3px;
+  min-width: 100px;
+  padding: 6px 15px;
+}
+.chart-horizontal .metric .metric-value {
+  float: right;
+  font-weight: bold;
 }
