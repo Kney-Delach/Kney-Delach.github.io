@@ -130,6 +130,7 @@
 
 
 .hr-career {
+  color: white;
   display: block;
   margin-top: 1.5rem;
   margin-bottom: 1.5em;
@@ -138,3 +139,24 @@
   border-style: inset;
   border-width: 1px;
 }
+
+
+
+/* Education */
+.edu 
+{
+  color: rgba(255, 255, 255, 255);
+  display: block;
+  text-align: center;
+  font-family: 'cascadia', 'monospace';
+}
+
+.edu-title
+{
+    color: rgba(255, 255, 255, 255);
+    font-family: 'Major Mono Display', monospace;
+    font-size: 2.8rem; 
+    letter-spacing: +0.7rem;
+    text-align: center;
+    padding-bottom: 25px;
+} 
