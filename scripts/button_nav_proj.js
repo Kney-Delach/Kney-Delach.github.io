@@ -7,7 +7,8 @@ const ProjectNames =
     "mirage",
     "exalted",
     "15_puzzle",
-    "game_tech"
+    "game_tech",
+    "vpa"
 ]
 
 let ProjectText = [];
