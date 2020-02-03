@@ -4,6 +4,7 @@
 
 const ProjectNames = 
 [
+    "mapex",
     "mirage",
     "exalted",
     "15_puzzle",
@@ -22,7 +23,6 @@ for(let i = 0; i < ProjectNames.length; ++i)
     fetch("./Data/pages/projects/" + ProjectNames[i] + ".html")
     .then( r => r.text() )
     .then( t => ProjectText[i] = t )
-
 }
 
 let bLock = false;
